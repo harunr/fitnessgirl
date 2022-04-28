@@ -1,0 +1,437 @@
+
+
+/* Fonts style */
+@font-face {
+    font-family: 'Brandon Grotesque Bold';
+    src: url('../fonts/BrandonGrotesque-Bold.eot');
+    src: url('../fonts/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
+        url('../fonts/BrandonGrotesque-Bold.woff') format('woff'),
+        url('../fonts/BrandonGrotesque-Bold.ttf') format('truetype'),
+        url('../fonts/BrandonGrotesque-Bold.svg#BrandonGrotesque-Bold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Brandon Grotesque Regular';
+    src: url('../fonts/BrandonGrotesque-Regular.eot');
+    src: url('../fonts/BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
+        url('../fonts/BrandonGrotesque-Regular.woff') format('woff'),
+        url('../fonts/BrandonGrotesque-Regular.ttf') format('truetype'),
+        url('../fonts/BrandonGrotesque-Regular.svg#BrandonGrotesque-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Brandon Grotesque Medium';
+    src: url('../fonts/BrandonGrotesque-Medium.eot');
+    src: url('../fonts/BrandonGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrandonGrotesque-Medium.woff') format('woff'),
+        url('../fonts/BrandonGrotesque-Medium.ttf') format('truetype'),
+        url('../fonts/BrandonGrotesque-Medium.svg#BrandonGrotesque-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../fonts/GothamBook.eot');
+    src: url('../fonts/GothamBook.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamBook.woff2') format('woff2'),
+        url('../fonts/GothamBook.woff') format('woff'),
+        url('../fonts/GothamBook.ttf') format('truetype'),
+        url('../fonts/GothamBook.svg#GothamBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('../fonts/GothamBold.eot');
+    src: url('../fonts/GothamBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamBold.woff2') format('woff2'),
+        url('../fonts/GothamBold.woff') format('woff'),
+        url('../fonts/GothamBold.ttf') format('truetype'),
+        url('../fonts/GothamBold.svg#GothamBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mighty River';
+    src: url('../fonts/MightyRiver.eot');
+    src: url('../fonts/MightyRiver.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MightyRiver.woff2') format('woff2'),
+        url('../fonts/MightyRiver.woff') format('woff'),
+        url('../fonts/MightyRiver.ttf') format('truetype'),
+        url('../fonts/MightyRiver.svg#MightyRiver') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/* // End Fonts style */
+
+
+
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ul{ 
+    list-style: none;
+}
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+.clear:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+a img{
+    border:0;
+}
+a,input,select,textarea{
+    outline:none;
+}
+input::-moz-focus-inner{
+    border:0; padding: 0;
+}
+
+
+/* Selection colours (easy to forget) */
+
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+a{text-decoration: none; display: inline-block; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
+a:hover{text-decoration: underline; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}
+
+
+
+/*		Default Layout 
+-------------------------------------------------------------------------------
+*/
+
+body {background: rgb(255,255,255); color: rgb(60,60,60); -webkit-text-size-adjust: 100%; -moz-text-size-adjust:100%; -moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased; overflow-x: hidden; overflow-y:scroll;}
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing:border-box; box-sizing: border-box;}
+
+.page-wrap{ float:left; width: 100%; position:relative; height: 100%; background: #ffffff; padding-bottom:61px}
+
+/*======Beginning Header Section ======*/
+.main-header{ float: left; width: 100%; padding-top: 50px }
+.common-wrap{ margin: 0 auto; max-width: 1212px; padding: 0 15px; clear: both;position: relative; }
+.top-mail{ float: left; width:auto; left: 15px; top: 0; position: absolute;z-index: 5}
+.top-mail span{ float: left; width:auto; display: inline-block;font-size: 12px; line-height: 37px; color: #c8d3d9;font-family: 'Open Sans', sans-serif;font-weight: 600; margin-right: 6px;}
+.top-mail a{ float: left; width:auto; display: inline-block;font-size: 12px; line-height: 37px; color: #00afb8;font-family: 'Open Sans', sans-serif;font-weight: 600}
+.main-nav{text-align: center;width: auto;}
+.header-bellow-nav ul,.main-nav ul{ text-align: center; width: auto;list-style: none; margin: 0; padding: 0; display: inline-block; clear: both;}
+.main-nav li,.header-bellow-nav li{display: inline-block; margin-left:27px;}
+.main-nav li a,.header-bellow-nav li a{display: inline-block;font-size: 14px; line-height: 37px;font-family: 'Brandon Grotesque Bold'; font-weight: 500; font-style: normal; color: #004563; text-transform: uppercase}
+.main-nav li:first-child{ margin-left: 0px}
+.main-nav li a:hover ,.main-nav li.active a,.header-bellow-nav li a:hover{ color: #00aeef; text-decoration: none;}
+.top-social-icon{ float: right; right: 15px; top: 8px; position: absolute; width: auto;}
+.top-social-icon a{ float:left; width: 23px; margin-left: 13px;}
+.top-social-icon a img{ float:left; width: 100%}
+.top-social-icon a:first-child{ margin-left: 0px;}
+.main-logo{ margin: 0 auto; max-width: 547px; width: 46.27749576988156%; padding-top:21px}
+.main-logo img{ float: left; width: 100%;}
+.header-bellow-nav{ float: left; width: 100%; margin-top: 12px; border-top: 9px solid #D0ECFB;border-bottom: 9px solid #D0ECFB }
+.header-bellow-nav ul{ width: 100%}
+.header-bellow-nav li{ padding: 6px 0; }
+.header-bellow-nav li a{font-size: 16px; letter-spacing: 3.0px}
+.main-nav li a{letter-spacing: 1.0px}
+
+.mobi-nav{ position: absolute;right:15px; top: 0; width: 30px;display: none;}
+.mobi-nav > div{ float: left; width: 100%; display: inline-block;height: 2px; margin:3px; background: #004563;}
+.mobi-nav > div:last-child{margin-bottom: 0px}
+.mobi-logo{display: none;}
+
+/*======End Header Section ======*/
+
+
+/*======Beginning Contact Page======*/
+.content-details-page{ float: left; width: 100%;}
+.contact-title{ float: left; width: 100%; padding-top: 70px;}
+.contact-title h2{text-align: center; width: 100%; font-size: 40px; line-height: 37px; color: #000000;font-family: 'Mighty River'; font-weight: normal; font-style: normal; }
+.celebrate-title{ text-align: center; width: 100%; font-size: 18px; line-height: 30px; color: #87969e;font-family: 'Open Sans', sans-serif; font-weight: 400; font-style: normal; padding-top:36px}
+.celebrate-title a{ text-decoration: none;color: #00afb8;font-family: 'Open Sans', sans-serif; font-weight: 300; font-style: normal;}
+.donot-forget{ text-align: center; width: 100%;font-size: 12px; line-height: 23px;color: #004563;font-family: 'Brandon Grotesque Regular'; font-weight: normal; font-style: normal; padding-top:22px}
+.donot-forget a{ text-decoration: none;margin-left: 4px; text-transform: uppercase;color: #004563;font-family: 'Brandon Grotesque Regular'; font-weight: normal; font-style: normal;}
+.donot-forget a:nth-child(3){margin-right: 5px}
+.donot-forget a:hover,.celebrate-title a:hover{text-decoration: underline;}
+.get-in-touch-wrap{ float: left; width: 100%; padding-top: 88px;}
+.get-in-touch{ float: left; width: 100%; background: url(../images/get-in-touch-banner.jpg) no-repeat center top; background-size: cover; position: relative; padding-bottom:18px;}
+.enqury-wrap{ margin: 0 auto; max-width: 785px; width: 66.41285956006768%; clear: both; background: #ffffff; margin-top: 24px; padding: 65px 0 55px 0}
+.query-details-wrap{margin: 0 auto;  max-width: 582px; clear: both; width: 74.14012738853503%;  }
+.query-title{ float: left; width: 100%; text-align: center;}
+.query-title span{width: 100%; text-align: center; display: inline-block;font-size: 18px; line-height: 23px; color: #a1daf7;font-family: 'Brandon Grotesque Bold'; font-weight: 500; font-style: normal;}
+.query-title h4{ width: 100%; text-align: center; font-size: 28px; line-height:27px; color: #004563;font-family: 'Brandon Grotesque Regular'; font-weight: normal; font-style: normal;letter-spacing:0.4px;}
+.query-title h4 dfn{ display: inline-block; font-style: normal;color: #004563;font-family: 'Brandon Grotesque Regular'; font-weight: normal; font-style: normal; text-transform: uppercase}
+.get-in-touch-form{ float: left; width: 100%; margin-top: 28px;}
+.get-row{ float: left; max-width: 281px; width:48.28178694158076%; margin:0 0 13px 3.436426116838488%;}
+.get-row:nth-child(odd){ margin-left: 0px;}
+.fields{ float: left; width: 100%; line-height: 16px; height: 44px; font-size: 10px; border: 0; padding: 0px 20px; background: #EBEBEB; text-transform: uppercase; color: #87969e;font-family: 'Brandon Grotesque Regular'; font-weight: normal;}
+.comment-box{ float: left; width: 100%;}
+.comment-box textarea{ float: left; width: 100%; padding:15px 20px 20px 20px;height: 188px; font-size: 10px; border: 0;text-transform: uppercase; color: #87969e;font-family: 'Brandon Grotesque Regular'; font-weight: normal;background: #EBEBEB; resize: none;}
+.submit-wrap{ float: left; width: 100%; margin-top: 16px;}
+.sub-btn{ text-align: center; width: 100%; font-size: 18px; border: 0;height: 46px; color: #ffffff; padding: 12px 0 14px; background: #A1DAF7;font-family: 'Gotham Bold'; font-weight: bold; font-style: normal; cursor: pointer}
+.social-midea{ float: left; width: 100%; background: #004563; padding: 85px 0 90px 0; margin-top: 39px}
+.social-midea span{text-align: center; display: inline-block; clear: both;width: 100%; font-size: 11px; line-height: 23px; color: #a1daf7;font-family: 'Brandon Grotesque Bold'; font-weight: 500; font-style: normal;letter-spacing: 1px}
+.social-midea h3{text-align: center; width: 100%; font-size: 36px; line-height: 46px; color: #ffffff;font-family: 'Mighty River'; font-weight: normal; font-style: normal; padding: 0 15px;}
+.social-midea-icon{ margin: 0 auto; max-width: 315px; padding-top: 45px;}
+.social-midea-icon a{ float: left; width: 61px; margin-left: 23px}
+.social-midea-icon a img{ float: left; width: 100%}
+.social-midea-icon a:first-child{ margin-left: 0px;}
+.brand-section{ float: left; width: 100%; padding-top: 54px;}
+.brand-section h5{ text-align: center; width: 100%; font-size: 20px; line-height: 30px; color: #004563;font-family: 'Brandon Grotesque Bold'; font-weight: 500; font-style: normal;letter-spacing: 0.4px}
+.brand-section h5 span{color: #004563; display: inline-block;font-family: 'Brandon Grotesque Regular'; font-weight: normal; font-style: normal;}
+.brand-section h5 a{ text-decoration: none; padding-left: 5px; display: inline-block;color: #00afb8;font-family: 'Brandon Grotesque Regular'; font-weight: normal; font-style: normal;}
+.brand-section p{ text-align: center; width: 100%; color: #a2a2a6; font-size: 12px; line-height: 23px;font-family: 'Open Sans', sans-serif;}
+.brand-item-wrap{ float: left; width: 100%; margin-top: 50px;}
+.brand-item{ float: left;max-width: 140px; width:11.84433164128596%;margin-left:4.822335025380711%; }
+.brand-item a{display: inline-block;}
+.brand-item a img{ float: left; width: 100%;}
+.brand-item:first-child{ margin-left:2.822335025380711%; }
+.row-details-wrap{ float: left; width: 100%; margin-top: 70px}
+.row-item{ float:left; max-width: 280px; width:23.72881355932203%; margin-left: 1.692047377326565%; }
+.row-item span{text-align: center; width: 100%; display: block;font-size: 10px; line-height:18px; padding-bottom: 7px; font-family: 'Brandon Grotesque Medium'; font-weight: 500; font-style: normal; color: #00aeef; border-bottom: 1px solid #00AEEF }
+.row-item p{text-align: center;padding-top:12px; color: #004563; max-width:187px; width:66.78571428571429%;  margin: 0 auto;font-size: 17px; line-height:31px;font-family: 'Brandon Grotesque Medium'; font-weight: 500; font-style: normal; }
+.row-item:first-child{ margin-left: 0px;}
+.row-item:nth-child(2) span{ color: #00afb8;border-bottom: 1px solid #00AFB8}
+.row-item:nth-child(3) span{ color: #bdc1cc;border-bottom: 1px solid #bdc1cc}
+.row-item:nth-child(4) span{ color: #a864a8;border-bottom: 1px solid #a864a8}
+.signature-text{ float: left ; width: 100%; padding-top:76px;}
+.signature-text h3{text-align: center;width: 100%; font-size: 37px; line-height: 33px; color: #000000;font-family: 'Mighty River'; font-weight: normal; font-style: normal;}
+/*======End Contact Page======*/
+
+/*======Beginning Home Page======*/
+.home-product-section{ float: left; width: 100%; padding-top:5px}
+.product-wrap{ float: left; width: 100%;}
+.product-item{ float: left; max-width: 280px; width: 23.68866328257191%;margin:20px 0 0 1.748448956570784%; position:relative;}
+.product-item img{ float: left; width: 100%;}
+.product-item:first-child{ margin-left: 0px;}
+.product-text-details{ float: left; width: 100%; padding-top: 10px}
+.product-text-details span{ text-align: center; display: block; width: 100%;font-size: 11px; line-height: 23px;color: #00aeef;font-family: 'Brandon Grotesque Bold'; font-weight: 500; font-style: normal;}
+.product-text-details h5{ text-align: center; width: 100%; font-size: 20px; line-height: 28px; color: #004563;font-family: 'Brandon Grotesque Regular'; font-weight: normal; font-style: normal;}
+.product-text-details p{text-align: center; width: 100%; font-size: 12px; line-height: 23px; color: #a2a2a6;font-family: 'Open Sans', sans-serif; font-weight: 400; padding-top: 20px;}
+.product-overlay{ position: absolute; left: 0; top: 0; width: 100%; height: 100%;z-index: 5; background:rgba(119, 210, 246, .9);}
+.comma-icon{ margin: 0 auto; width: 55px; padding-top:55px}
+.comma-icon img{ float: left; width: 100%;}
+.product-overlay del{ margin: 0 auto; max-width: 188px;text-align: center; padding-top: 20px; display: block; clear: both;font-size: 29px; line-height: 36px; color: #ffffff;font-family: 'Brandon Grotesque Bold'; font-weight: 500; font-style: normal; text-transform: uppercase}
+.product-overlay dfn{display: block;text-align: center; clear: both;font-size: 29px; line-height: 36px; color: #000000;font-family: 'Brandon Grotesque Bold'; font-weight: 500; font-style: normal; text-transform: uppercase}
+.lets-go-icon{ margin: 0 auto; width: 47px; clear: both; padding-top: 31px;}
+.lets-go-icon img{ float: left; width: 100%;}
+.product-wrap:first-child .product-item:nth-child(3) span{ color: #a864a8}
+.product-wrap:first-child .product-item:nth-child(4) span{ color: #00afb8}
+/*.product-wrap:nth-child(2){ padding-top:20px}*/
+.product-big-item{ float: left; max-width: 582px; width: 49.23857868020305%;margin:20px 0 0 1.522842639593909%; position: relative;}
+.product-big-item img{ float: left; width: 100%;}
+.product-sub-item{ float: left; width: 100%;margin-top: 22px;}
+.product-sub-item img{ float: left; width: 100%}
+.product-big-text-wrap{ float: left; width: 100%; position: absolute; left: 0; bottom: 30px; z-index: 5}
+.raw-help{ margin: 0 auto; clear: both; max-width: 530px; width: 91.06529209621993%;overflow: hidden;background: #ffffff; padding: 34px 57px 66px 47px;}
+.subscribe-wrap{ margin: 0 auto; max-width: 582px; width: 49.23857868020305%; clear: both; padding-top: 20px;}
+.subscribe-raw{ float: left; max-width: 282px; width:48.45360824742268%;margin-left: 3.092783505154639% }
+.subscribe-raw:first-child{margin-left: 0px;}
+.sub-field{ float: left; width: 100%; height: 44px; font-size: 10px; line-height: 16px; text-transform: uppercase; padding: 0px 20px; border: 0; color: #87969e;font-family: 'Brandon Grotesque Regular'; font-weight: normal; font-style: normal; background: #ffffff;}
+.product-big-item .product-big-text-wrap .raw-help .product-text-details h5{ font-size:28px; line-height: 28px}
+.subscribe{ float:left; width: 100%; padding-top: 16px;}
+.subscribe-btn{ text-align: center; width: 100%; font-size: 18px; display: inline-block;line-height: 46px; height: 46px; color: #ffffff; font-family: 'Gotham Bold'; font-weight: bold; font-style: normal; background: #A1DAF7; border: 0; cursor: pointer}
+.product-more{ float: left; width: 100%;}
+.product-more .product-wrap .product-item:nth-child(1)  .product-text-details span{color: #bdc1cc}
+.product-more .product-wrap .product-item:nth-child(2)  .product-text-details span{color: #a864a8}
+.product-more .product-wrap .product-item:nth-child(3)  .product-overlay{ position: relative; padding: 112px 0 68px 0}
+.product-more .product-wrap .product-item:nth-child(3)  .product-overlay .lets-go-icon{ padding-top: 55px}
+.product-more .product-wrap .product-item:nth-child(3)  .product-overlay .often-that{ width: 180px; margin: 0 auto; clear: both; font-size: 16px; line-height: 23px; color: #ffffff; text-transform: uppercase; letter-spacing: 1.3px;font-family: 'Gotham Bold'; font-weight: bold; text-align: center; }
+
+.by-tecno-lee{ margin: 0 auto; width: 140px; clear: both; padding-top: 24px;}
+.by-tecno-lee img{ float: left; width: 100%;}
+
+.load-more{float: left;width: 100%;  clear: both; padding-top: 60px; }
+
+.load-more a{ text-decoration: none;text-align: center; width: 100%;font-size: 18px; line-height: 46px; height: 46px; background: #A1DAF7; display:inline-block;color: #ffffff;font-family: 'Gotham Bold'; font-weight: bold;}
+
+
+
+.home-social{padding: 71px 0 72px 0; margin-top: 20px;}
+
+
+
+
+/*======End Home Page======*/
+
+/* =======================================================================================================
+============================================ Responsive style ========================================== */
+
+/*		Mobile Layout: 320px and 480px and more but less than or equal to 767px.
+----------------------------------------------------------------------------------
+*/
+
+@media only screen and (max-width: 767px) {
+	input[type="text"],input[type="submit"],input[type="password"],select{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+    .main-header{ padding: 0}
+    .top-mail,.main-logo{ display: none;}
+    .mobi-logo{ display: block; margin: 0; float: left; width: 100px; padding: 0;}
+    .main-nav{ float: left; width: 100%; padding-top: 20px;display: none;}
+    .main-nav li{ text-align: center; width: 100%; margin: 0;}
+    .main-nav li a,.header-bellow-nav li a{font-size: 14px; line-height: 26px; display: inline-block;}
+    .top-social-icon{ position: relative;float: none; margin: 0 auto; max-width:132px;overflow: hidden;right: auto;top: auto; padding: 15px 0; clear: both}
+    .mobi-nav{ display: block;}
+    .header-bellow-nav li{ text-align: center; width: 100%; margin: 0; padding: 0;}
+    .header-bellow-nav li a{ line-height: 24px}
+    .main-header{ background: #ebebeb; padding: 8px 0; position: fixed; left: 0; top: -1px; margin-top: 1px; z-index: 20;}
+    .product-item{ max-width: 100%; width: 100%; float: none; margin:20px 0 0 0px; position: relative; clear: both; overflow: hidden;}
+   ';' .comma-icon{ padding-top: 15px; width: 50px}
+    .product-overlay del,.product-overlay dfn{ font-size: 22px; line-height: 29px;}
+    .product-text-details p{ padding-top: 10px;}
+    .product-sub-item{ margin-top: 20px}
+    
+    .product-big-item{ max-width: 100%; width: 100%;margin:15px 0 0 0px; }
+    .raw-help{ padding: 13px}
+    .subscribe-wrap{ float: left; width: 100%; max-width: 100%; padding: 0 15px; margin-top: 20px; clear: both;}
+    .subscribe-raw{ max-width: 100%; width: 100%;; margin:0px 0 15px 0}
+    .home-social {padding: 26px 0 20px 0;}
+    .social-midea h3{ font-size: 27px; line-height: 32px; padding: 0 15px}
+    .product-more .product-wrap .product-item:nth-child(3) .product-overlay { position: relative; padding: 40px 0 39px 0;}
+    .product-more .product-wrap .product-item:nth-child(3)  .product-overlay .often-that{ max-width: 100%; width: 100%; padding: 0 15px; font-size: 15px}
+    .load-more,.brand-section{ padding-top: 32px}
+    .brand-section h5{ font-size: 13px; line-height: 24px}
+    .brand-section p{ padding-top: 12px; font-size: 14px; line-height: 20px}
+    .brand-item-wrap{ margin-top: 30px}
+    .row-item{ float: none; max-width: 280px; width: 100%; margin: 0 auto; padding-top: 30px;}
+    .row-item:first-child{ margin-left: auto}
+    .row-details-wrap{ margin-top: 0px;}
+    .signature-text{ padding-top: 5px}
+    
+    .contact-title,.get-in-touch-wrap{ padding-top: 35px}
+    .contact-title h2{ font-size: 30px}
+    .celebrate-title{ padding-top: 8px; font-size: 17px; line-height: 26px}
+    .get-in-touch{ padding:20px 10px 18px 10px}
+    .enqury-wrap{ max-width: 100%; width: 100%; padding:20px 0; margin: 0}
+    .query-details-wrap{ max-width: 100%; width: 100%; padding: 0 10px}
+    .get-row{ max-width: 100%; width: 100%; margin-left: 0px}
+    
+    .query-title h4{ font-size: 17px; line-height: 26px}
+    .get-in-touch-form{ margin-top: 16px}
+    .social-midea { padding: 28px 0 23px 0; margin-top: 30px;}
+    /*.social-midea-icon{ max-width: 100%;text-align: center; clear: both; margin: 20px 20px 0 20px; padding: 0; overflow: hidden}
+    .social-midea-icon a{ width: 50px; margin-left:16px}*/
+    .brand-item { float: left; max-width: 140px; width: 47%; margin-bottom: 15px}
+    .brand-item:nth-child(odd){margin-left: 0px}
+    
+    .social-midea-icon { margin: 0 auto; max-width: 270px; padding-top: 45px; clear: both; overflow:hidden; padding-top: 30px}
+    .social-midea-icon a{ width: 50px}
+    
+    .content-details-page,.contact-page{padding-top: 42px;}
+    .product-big-item .product-big-text-wrap .raw-help .product-text-details h5,.signature-text h3{font-size: 26px;}
+    .page-wrap{padding-bottom: 30px;}
+    .signature-text{padding-top: 15px;}
+    .load-more{padding-top: 20px;}
+    .header-bellow-nav ul{padding: 10px 0;}
+    
+    
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {input[type="text"],input[type="submit"],input[type="password"],select{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+
+    
+    .brand-item {
+        float: left;
+        max-width: 162px;
+        width: 100%;
+        margin-bottom: 40px;}
+    .comma-icon{ padding-top: 35px; width: 55px}
+}
+
+
+/*		Tablet Layout: 768px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	input[type="text"],input[type="submit"],input[type="password"],select{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+    .main-header{ padding-top: 30px}
+    .main-nav li, .header-bellow-nav li{ margin-left: 10px}
+    .product-item { float: left; max-width: 100%; width: 49%; margin: 20px 0 0 2%; position: relative;}
+    .product-item:nth-child(odd) {margin-left: 0px;}
+    .product-big-item { float: left; max-width: 100%; width: 100%; margin: 20px 0 0 0; position: relative;}
+
+    .product-more .product-wrap .product-item:nth-child(3) .product-overlay { position: relative; padding: 112px 0 108px 0;}
+    .header-bellow-nav li{ margin-left: 27px}
+    .home-social { padding: 44px 0 52px 0;}
+    .query-title h4{ font-size: 24px; line-height: 27px;}
+    .enqury-wrap{ padding: 30px 0}
+    .contact-title{ padding-top: 52px}
+    
+    .get-in-touch-wrap{ padding-top: 60px}
+    .row-item p{max-width: 187px; width: 100%; font-size: 16px}
+    .row-details-wrap{ margin-top: 44px}
+    .brand-section{ padding-top: 36px}
+    .signature-text{ padding-top: 48px}
+    .social-midea { padding: 61px 0 63px 0;}
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+/*		Tablet Layout: 1024px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+	input[type="text"],input[type="submit"],input[type="password"],select{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+    
+    
+    .row-item p{ width: 100%;}
+    .product-more .product-wrap .product-item:nth-child(3) .product-overlay { position: relative; padding: 75px 0 89px 0;} .raw-help{ padding: 30px;}
+}
+
+
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	
+}
+
+
+
+
+
+
+
